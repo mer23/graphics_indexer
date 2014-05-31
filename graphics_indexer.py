@@ -108,7 +108,7 @@ while True:
 				current_img= 0
 	
 	else:
-		image_number= raw_input("Enter image number between 1 and " + str(AMOUNT_OF_IMAGES) + ": ")
+		image_number= raw_input("Enter image number (between 1 and " + str(AMOUNT_OF_IMAGES) + "): ")
 
 		if(not is_valid(image_number)):
 			print "The number you entered is invalid."
@@ -119,7 +119,7 @@ while True:
 		screen.fill(BACKGROUND_COLOR)
 		draw_image(current_img)
 		pygame.display.flip()
-		print "Select the slots to shape the new image by clicking them.\nWhen you're done with selection press return."
+		print "Select the slots to shape the new image by clicking them.\nWhen you're done with selection press return.\nTo select a new image press the 'n' key."
 		image_selected= True
 		
 
